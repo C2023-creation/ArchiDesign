@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+
+
+* {
+
+    font-size: 18px;
+
+}
+
+body {
+
+    color: #414141;
+    font-family: "Nunito", sans-serif;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+
+}
+
+.header {
+    padding-top: 40px;
+    text-align: center;
+    background-color: #00748D;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #ffffff;
+
+}
+
+.header p {
+    margin: 0;
+    font-weight: 800;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+
+    background-color: #ffffff;
+    color: #00748D;
+    padding: 10px 60px;
+    transition: 0.3s;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+nav {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+nav,
+h1,
+h2,
+h3 {
+    font-family: "Fjalla One", sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #CB8606;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+h2 {
+    color: #00748D;
+    font-size: 25px;
+}
+
+
+h2::before,
+h2::after {
+    content: '\f068';
+    font: var(--fa-font-solid);
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #CB8606;
+}
+
+h1::before,
+h1::after {
+    content: '\f068';
+    font: var(--fa-font-solid);
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #00748D;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article,
+aside {
+    padding: 20px;
+}
+
+
+
+.readmore {
+    margin-top: 20px;
+    padding: 15px 50px;
+    background-color: #00748D;
+    color: #ffffff;
+    border: none;
+}
+
+.temoignages p:nth-of-type(odd)::before {
+    content: url(images/quote.png);
+    margin-right: 10px;
+
+
+}
+
+.temoignages p:nth-of-type(even)::before {
+    content: url(images/client.png);
+    margin-right: 10px;
+}
+
+.temoignages p:nth-of-type(even) {
+    border-bottom: 2px solid #CB8606;
+    padding-bottom: 20px;
+    width: 75%;
+}
+
+.temoignages,
+.tweets {
+    font-size: 16px;
+
+}
+
+.temoignages p:nth-of-type(even) {
+    font-size: 14px;
+}
+
+
+
+.tweets p::before {
+    content: url(images/circle.png);
+    margin-right: 10px;
+}
+
+.temoignages {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 500px;
+    overflow: auto;
+
+}
+
+
+.footer-page {
+
+    text-align: center;
+    background-color: #00748D;
+    padding-bottom: 30px;
+    color: #ffffff;
+
+
+}
+
+.footer-page p {
+    margin: 0;
+}
+
+.liens {
+    margin: 20px;
+
+}
+
+.liens a i {
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+
+
+footer a {
+    text-decoration: none;
+    color: #CB8606;
+
+}
+
+footer {
+    text-align: center;
+    background-color: #5d4f4f;
+    padding: 20px;
+    color: #ffffff;
+    clear: both;
+}
+
+
+@media screen and (min-width:990px) {
+
+    .header {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+
+
+    .container-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+
+
+    .kitchen img {
+        width: 50%;
+
+    }
+
+    .office img {
+        width: 50%;
+    }
+
+
+    section {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .aside {
+        margin-top: -100px;
+        width: 50%;
+    }
+
+    .office img,
+    .kitchen img {
+        /* display: block; */
+        float: left;
+        margin-right: 20px;
+    }
+
+    h2 {
+        clear: both;
+        padding-top: 20px;
+    }
+
+    .kitchen {
+        margin-top: -300px;
+    }
+
+    .tweets {
+        width: 100%;
+    }
+
+    .office {
+        margin-top: 40px;
+    }
+
+
+
+
+    .footer-page {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 10px 40px;
+    }
+
+
+
+}
+
+
+
+@media screen and ((min-width:780px) and (max-width:990px)) {
+
+    .aside {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .temoignages {
+        width: 40%;
+    }
+
+}
+
+
+@media screen and (max-width:630px) {
+
+    ul {
+        display: block;
+
+    }
+}
